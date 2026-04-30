@@ -66,7 +66,12 @@ st.markdown(
     "<p style='text-align: center;'>Upload a WAV audio file to detect emotional tone</p><hr>",
     unsafe_allow_html=True
 )
-
+st.markdown(
+    "<p style='text-align: center;'>📂 Dataset used: "
+    "<a href='https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1' target='_blank'>"
+    "Download RAVDESS Dataset</a></p>",
+    unsafe_allow_html=True
+)
 uploaded_audio = st.file_uploader("Upload a .wav audio file", type=["wav"])
 
 if uploaded_audio:
